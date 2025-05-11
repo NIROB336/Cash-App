@@ -1,35 +1,23 @@
-import { Text, SafeAreaView, StyleSheet } from 'react-native';
-
-// You can import supported modules from npm
-import { Card } from 'react-native-paper';
-
-// or any files within the Snack
-import AssetExample from './components/AssetExample';
-
-export default function App() {
-  return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.paragraph}>
-        Change code in the editor and watch it change on your phone! Save to get a shareable url.
-      </Text>
-      <Card>
-        <AssetExample />
-      </Card>
-    </SafeAreaView>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: '#ecf0f1',
-    padding: 8,
-  },
-  paragraph: {
-    margin: 24,
-    fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  },
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <title>Payment Page</title>
+ <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ <div class="container">
+   <img src="profile.jpg" alt="Profile Photo" class="profile-pic"/>
+   <h2 id="name">Lewis Wolbert</h2>
+   <p id="username">Payment from Wolbert87</p>
+   <h1 id="amount">$75.00</h1>
+   <p id="message">For la flame fans must eat</p>
+   <p id="time">Today at 8:19 PM</p>
+   <div class="buttons">
+     <button class="accept">Accept</button>
+     <button class="decline">Decline</button>
+   </div>
+ </div>
+</body>
+</html>
